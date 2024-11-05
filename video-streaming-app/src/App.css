@@ -1,0 +1,77 @@
+/* Fullscreen gradient background */
+body, html {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background: linear-gradient(135deg, #f7c6c7, #ffd5cd); /* Peachy pink to light coral gradient */
+}
+
+/* App container styling */
+.app-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 20px;
+font-family: 'Arial', sans-serif;
+}
+
+/* Title styling with vibrant color and shadow */
+.app-title-container {
+display: flex;
+align-items: center;
+margin-bottom: 25px;
+}
+
+.app-title-icon {
+width: 35px;
+height: 35px;
+margin-right: 10px;
+}
+
+.app-title {
+font-size: 2em;
+color: #ff5a5f; /* Vibrant coral */
+font-weight: 600;
+text-align: center;
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+transition: color 0.3s ease;
+}
+
+.app-title:hover {
+color: #d9484e; /* Darker coral shade on hover */
+cursor: pointer;
+}
+
+/* Video container styling */
+.video-container {
+position: relative;
+width: 70%; /* Smaller width for better fit */
+max-width: 500px; /* Reduced maximum width */
+background-color: #ffffff;
+border-radius: 12px;
+padding: 8px;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.video-container:hover {
+transform: scale(1.02);
+background-color: #ffd5cd; /* Light coral hover effect */
+}
+
+/* Video player styling */
+.video-container video {
+width: 100%;
+height: auto; /* Allow dynamic height based on width */
+object-fit: cover; /* Ensures video fits without distortion */
+border-radius: 8px;
+background-color: #000;
+}
